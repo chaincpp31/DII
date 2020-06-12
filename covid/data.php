@@ -1,8 +1,8 @@
 <?php
 require_once "connection.php";
 <form method="POST" action="display.php">
-$name = $_POST["name"];
-$lastname = $_POST["lastname"]
+$Name = $_POST["name"];
+$Lastname = $_POST["lastname"]
 $userQuery = "INSERT INTO 'covid'" ('name','lastname')VALUES('$name','$lastname');
 $result = mysqli_query($Connect,$userQuery);
 if (!$result) {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <form action="data.php" method="post" name="form1"></form>
+    <form action="covid_total.php" method="post" name="form1"></form>
     <link href="style.css"rel="stylesheet"type="text/css"/>
 </head>
 <body>
@@ -24,13 +24,13 @@
             ด้วยความปรารถนาดีจาก โรงพยาบาลมหาราชนครเชียงใหม่
             คณะแพทยศาสตร์ มหาวิทยาลัยเชียงใหม่
         </p></div>
-        <div>
-            <h2>ชื่อ:</h2><input name="name" type="text">
-            <h2>นามสกุล:</h2><input name="lastname" type="text"><br>
+        <form method="POST" action="covid_total.php">
+            <h2>ชื่อ:</h2><input id="name" name="name" type="text">
+            <h2>นามสกุล:</h2><input id="lastname" name="lastname" type="text"><br>
             <h2>เพศ</h2>
             <p>
-            <input name="rdoSex" type="radio" value="Man">ชาย
-            <input name="rdoSex" type="radio" value="Woman">หญิง<br>
+            <input for="rdoSex" name="rdoSex" type="radio" value="Man">ชาย
+            <input for="rdoSex" name="rdoSex" type="radio" value="Woman">หญิง<br>
             </p>
             <h2>อายุ</h2>:<input name="age" type="text"><br>
             <h2>โรคประจำตัว (ถ้ามี)</h2><br>
@@ -41,9 +41,10 @@
             <input name="checkrok" type="checkbox" value="check5">โรคไต<br>
             <input name="checkrok" type="checkbox" value="check6">โรคปอด(หอบหืด,ถุงลมโป่งพอง)<br>
             <input name="checkrok" type="checkbox" value="check7">อื่นๆ:<input name="rokother" type="text"><br><br>
+            <input type="submit" value="submit">
             <span class="button"><a href="covid2.html"><img src="img/next_button.png"></a></span>
         </form>
-       </div>
+    </div>
        <div id="right"><b>This is right side.</b></div>
        <div id="footer"><b>This is footer</b></div>
 </div>
