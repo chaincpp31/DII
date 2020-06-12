@@ -23,25 +23,16 @@
             <br>
             ด้วยความปรารถนาดีจาก โรงพยาบาลมหาราชนครเชียงใหม่
             คณะแพทยศาสตร์ มหาวิทยาลัยเชียงใหม่
-        </p></div>
-        <div>
-            <h2>ชื่อ:</h2><input name="name" type="text">
-            <h2>นามสกุล:</h2><input name="lastname" type="text"><br>
-            <h2>เพศ</h2>
-            <p>
-            <input name="rdoSex" type="radio" value="Man">ชาย
-            <input name="rdoSex" type="radio" value="Woman">หญิง<br>
-            </p>
-            <h2>อายุ</h2>:<input name="age" type="text"><br>
-            <h2>โรคประจำตัว (ถ้ามี)</h2><br>
-            <input name="checkrok" type="checkbox" value="check1">ความดันโลหิต<br>
-            <input name="checkrok" type="checkbox" value="check2">เบาหวาน<br>
-            <input name="checkrok" type="checkbox" value="check3">ไขมันในเลือดสูง<br>
-            <input name="checkrok" type="checkbox" value="check4">โรคหัวใจ<br>
-            <input name="checkrok" type="checkbox" value="check5">โรคไต<br>
-            <input name="checkrok" type="checkbox" value="check6">โรคปอด(หอบหืด,ถุงลมโป่งพอง)<br>
-            <input name="checkrok" type="checkbox" value="check7">อื่นๆ:<input name="rokother" type="text"><br><br>
-            <span class="button"><a href="covid2.html"><img src="img/next_button.png"></a></span>
+        </p></div><br>
+        <form>
+            <h2>ท่านมีอาการดังต่อไปนี้อย่างน้อยหนึ่งอาการ ► ไอ,เจ็บคอ,คัดจมูก,น้ำมูกไหล,หายใจลำบาก</h2><br><br>
+            <input name="checkarkarn" type="radio" value="arkarnyes">ใช่<br>
+            <input name="checkarkarn" type="radio" value="arkarnno">ไม่ใช่<br><br>
+            <h2>ท่านรู้สึกมีไข้ หรือ อุณหภูมิร่างกายเกิน 37.5 องศาเซลเซียส</h2><br><br>
+            <input name="checktemp" type="radio" value="tempyes">ใช่<br>
+            <input name="checktemp" type="radio" value="tempno">ไม่ใช่<br><br>
+            <span class="button"><a href="covid.html"><img src="img/back_button.png"></a></span>
+            <span class="button"><a href="covid3.html"> <img src="img/next_button.png"></a></span>
         </form>
        </div>
        <div id="right"><b>This is right side.</b></div>

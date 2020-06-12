@@ -1,6 +1,18 @@
 body{background-image:url(img/bg.jpg);}
-h1{color: blue;
-    background-color: lightblue;
-    padding: 10px 10px 10px 10px;
-    margin: 10px 550px 10px 550px;
+h1{
+    font-size: 30px;
+}
+h2{
+    display: inline;
+}
+* { margin: 0; padding: 0; }
+#all{ width:980px; height:100%; margin:0px auto; position:relative; }
+#header{ background-color:pink; height:100px; padding:10px;}
+#left{ background-color:#80ec00; height:100%; width:200px; position:absolute;}
+#content{ position:absolute; margin:0 250px 0 200px; padding:8px; }
+#right{ background-color:#8080ec; height:100%; width:250px; position:absolute; right:0; }
+#footer{ position:absolute; background-color:#808080; height:100px; text-align:center; bottom:-1000px; width:100%; }
+.button img{
+    width: 50px;
+    height: 50px;
 }
