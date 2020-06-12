@@ -27,6 +27,7 @@
         <div>
             <h2>ชื่อ:</h2><input name="name" type="text">
             <h2>นามสกุล:</h2><input name="lastname" type="text"><br>
+            <input name="submit" type="submit" value="submit">
             <h2>เพศ</h2>
             <p>
             <input name="rdoSex" type="radio" value="Man">ชาย
