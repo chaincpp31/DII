@@ -34,18 +34,30 @@
             </p>
             <h2>อายุ</h2>:<input name="age" type="text"><br>
             <h2>โรคประจำตัว (ถ้ามี)</h2><br>
-            <input name="checkrok" type="checkbox" value="check1">ความดันโลหิต<br>
-            <input name="checkrok" type="checkbox" value="check2">เบาหวาน<br>
-            <input name="checkrok" type="checkbox" value="check3">ไขมันในเลือดสูง<br>
-            <input name="checkrok" type="checkbox" value="check4">โรคหัวใจ<br>
-            <input name="checkrok" type="checkbox" value="check5">โรคไต<br>
-            <input name="checkrok" type="checkbox" value="check6">โรคปอด(หอบหืด,ถุงลมโป่งพอง)<br>
-            <input name="checkrok" type="checkbox" value="check7">อื่นๆ:<input name="rokother" type="text"><br><br>
+            
+
+<input type="checkbox" id="check1" name="check1" value="1"/>ความดันโลหิต<br>
+<input type="checkbox" id="check2" name="check2" value="1"/>เบาหวาน<br>
+<input type="checkbox" id="check3" name="check3" value="1"/>ไขมันในเลือดสูง<br>
+<input type="checkbox" id="check4" name="check4" value="1"/>โรคหัวใจ<br>
+<input type="checkbox" id="check5" name="check5" value="1"/>โรคไต<br>
+<input type="checkbox" id="check6" name="check6" value="1"/>โรคปอด(หอบหืด,ถุงลมโป่งพอง)<br>
+<!--<input type="checkbox" id="check6" onclick="check(this)"/>อื่นๆ:<input name="rokother" type="text"><br><br>-->
+<input type="submit" value="submit">
+<button type="button" onclick="myFunction()"  onmouseover="this.style.cursor='pointer';">ส่งค่าตัวแปร</button>
+          <!--<input name="checkrok1" type="checkbox" value="check1">ความดันโลหิต<br>
+            <input name="checkrok2" type="checkbox" value="check2">เบาหวาน<br>
+            <input name="checkrok3" type="checkbox" value="check3">ไขมันในเลือดสูง<br>
+            <input name="checkrok4" type="checkbox" value="check4">โรคหัวใจ<br>
+            <input name="checkrok5" type="checkbox" value="check5">โรคไต<br>
+            <input name="checkrok6" type="checkbox" value="check6">โรคปอด(หอบหืด,ถุงลมโป่งพอง)<br>
+            <input name="checkrok7" type="checkbox" value="check7">อื่นๆ:<input name="rokother" type="text"><br><br>
             <input type="submit" value="submit">
             <span class="button"><a href="covid2.html"><img src="img/next_button.png"></a></span>
-        </form>
+        </form>-->
     </div>
        <div id="right"><b>This is right side.</b></div>
        <div id="footer"><b>This is footer</b></div>
+       </form>
 </div>
 </html>
