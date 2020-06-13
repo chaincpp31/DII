@@ -15,7 +15,8 @@ if ($Connect->connect_error) {
     die("Connection failed: " . $Connection->connect_error);
   }
   
-  $sql = "SELECT * FROM covid";
+  $sql = "SELECT * FROM `covid` ORDER BY id DESC LIMIT 1" ;
+  echo $sql;
   $result = $Connect->query($sql);
   
 //   if ($result->num_rows > 0) {
@@ -69,14 +70,18 @@ if ($Connect->connect_error) {
     if ($result->num_rows > 0) {
         // output data of each row
         while($row = $result->fetch_assoc()) {
+            echo "<h1>".$row['name']."</h1>";
             // echo "11";
             // echo "<tr><td>000</td></tr>";
           echo "<tr><td>".$row['name']."</td><td>".$row['lastname']."</td><td>".$row['sex']."</td><td>".$row['age']."</td><td>".$row['rok']."</td><td>".showStatus($row['rok'])."</td></tr>";
         }
+
         
       } else {
         echo "0 results";
       }
+
+
     ?>
         <!-- <tr>
         <td>Name</td>

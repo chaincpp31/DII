@@ -31,7 +31,7 @@
             <h2>ท่านรู้สึกมีไข้ หรือ อุณหภูมิร่างกายเกิน 37.5 องศาเซลเซียส</h2><br><br>
             <input name="checktemp" type="radio" value="tempyes">ใช่<br>
             <input name="checktemp" type="radio" value="tempno">ไม่ใช่<br><br>
-            <span class="button"><a href="covid.html"><img src="img/back_button.png"></a></span>
+            <span class="button"><a href="covid.php"><img src="img/back_button.png"></a></span>
             <span class="button"><a href="covid3.html"> <img src="img/next_button.png"></a></span>
         </form>
        </div>

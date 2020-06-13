@@ -10,5 +10,4 @@ if($Connect){
 else{
     echo "Error";
 }
-mysqli_close($Connect);
 ?>
