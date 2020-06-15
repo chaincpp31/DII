@@ -69,6 +69,12 @@
                 <input type="checkbox" id="check5" name="check5" value="1" />โรคไต<br>
                 <input type="checkbox" id="check6" name="check6" value="1" />โรคปอด(หอบหืด,ถุงลมโป่งพอง)<br>
                 <input type="checkbox" id="check7" name="check7" value="1" />อื่นๆ:<input type="text"><br><br>
+                <h2>ท่านมีอาการดังต่อไปนี้อย่างน้อยหนึ่งอาการ ► ไอ,เจ็บคอ,คัดจมูก,น้ำมูกไหล,หายใจลำบาก</h2><br><br>
+            <input name="checkarkarnyes" type="radio" value="1">ใช่<br>
+            <input name="checkarkarnno" type="radio" value="0">ไม่ใช่<br><br>
+            <h2>ท่านรู้สึกมีไข้ หรือ อุณหภูมิร่างกายเกิน 37.5 องศาเซลเซียส</h2><br><br>
+            <input name="checktemp" type="radio" value="1">ใช่<br>
+            <input name="checktemp" type="radio" value="0">ไม่ใช่<br><br>
                 <input class="btn btn-success" type="submit" value="submit" >
                 <input class="btn btn-success" type="button" value="test javascript" onclick="alert('Hello '+$('#name').val())" >
                 <!--<input name="checkrok1" type="checkbox" value="check1">ความดันโลหิต<br>
@@ -84,8 +90,6 @@
                 <span class="button"><a href="covid2.php"><img src="img/next_button.png"></a></span>
         </div>
         <div id="right"><b>This is right side.</b></div>
-        <div id="footer"><b>This is footer</b></div>
+        
         </form>
-    </div>
-
 </html>

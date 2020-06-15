@@ -16,7 +16,7 @@ if ($Connect->connect_error) {
   }
   
   $sql = "SELECT * FROM `covid` ORDER BY id DESC LIMIT 1" ;
-  echo $sql;
+  //echo $sql;
   $result = $Connect->query($sql);
   
 //   if ($result->num_rows > 0) {
@@ -73,7 +73,7 @@ if ($Connect->connect_error) {
             echo "<h1>".$row['name']."</h1>";
             // echo "11";
             // echo "<tr><td>000</td></tr>";
-          echo "<tr><td>".$row['name']."</td><td>".$row['lastname']."</td><td>".$row['sex']."</td><td>".$row['age']."</td><td>".$row['rok']."</td><td>".showStatus($row['rok'])."</td></tr>";
+          echo "<tr><td>".$row['name']."</td><td>".$row['lastname']."</td><td>".$row['sex']."</td><td>".$row['age']."</td><td>".$row['disease']."</td><td>".showStatus($row['disease'])."</td></tr>";
         }
 
         

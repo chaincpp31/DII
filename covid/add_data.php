@@ -5,7 +5,16 @@ $Name = $_POST['name'];
     $Lastname = $_POST['lastname'];
     $Sex = $_POST['rdoSex'];
     $Age = $_POST['age'];
+    $Arkarn = $_POST['arkarn'];
+    $Temp = $_POST['checktemp'];
     $Check1 = 0;
+    $Checkarkarn = 0 ;
+    if (isset($_POST ['checkarkarnyes'])){
+        $Checkarkarn = 1;
+    }
+    elseif (isset($_POST ['arkarnno'])){
+        $Checkarkarn = 0;
+    }
     if(isset($_POST['check1'])){
         $Check1=1;
     }  ;
@@ -29,8 +38,8 @@ $Name = $_POST['name'];
     if(isset($_POST['check6'])){
         $Check6=1;
     }  ;
-    $TOTAL = $Check1+$Check2+$Check3+$Check4+$Check5+$Check6;
-    $userQuery = "INSERT INTO `covid`(`name`, `lastname`, `sex`, `age`, `rok`, `arkarn`, `temp`, `his`) VALUES ('$Name','$Lastname','$Sex',$Age,$TOTAL,'','','')";
+    $TOTAL = $Check1+$Check2+$Check3+$Check4+$Check5+$Check6+$Checkarkarn;
+    $userQuery = "INSERT INTO `covid`(`name`, `lastname`, `sex`, `age`, `disease`, `arkarn`, `temp`, `his`) VALUES ('$Name','$Lastname','$Sex',$Age,$TOTAL,'','','')";
   
 
     echo $userQuery;
