@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V15</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+
+
+	<div class="container-contact100">
+		<div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422" data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+		<div class="wrap-contact100">
+			<div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
+				<span class="contact100-form-title-1">
+					แบบคัดกรองผู้ป่วยติดเชื้อระบบทางเดินหายใจ จากไวรัสโควิด-19 (COVID-19)
+				</span>
+
+				<span class="contact100-form-title-2">
+					โปรดอ่าน!
+
+                    แบบคัดกรองนี้ เป็นการประเมินความเสี่ยง การติดเชื้อในระบบทางเดินหายใจจากไวรัสโควิด-19 (COVID-19)
+                    เพื่อให้ประชาชนทั่วไป สามารถประเมินความเสี่ยงได้ด้วยตนเอง และได้รับคำแนะนำที่เหมาะสมในการดูแลตนเอง
+                    รวมถึงการปฏิบัติตนเพื่อป้องกันการแพร่กระจายของเชื้อโรค
+                    ตลอดจนการรับบริการจากโรงพยาบาลมหาราชนครเชียงใหม่
+                    <br>
+                    ► กระทรวงสาธารณสุข ประกาศให้โรคนี้ เป็นโรคติดต่ออันตราย
+                    โปรดตอบแบบสอบถามตามความเป็นจริง เพื่อประโยชน์แก่ตัวท่านเอง
+                    และเพื่อป้องกันการแพร่กระจายของเชื้อโรค
+                    <br>
+                    ► แบบประเมินนี้ เป็นใช้ข้อมูลล่าสุดในการประเมินความเสี่ยง และมิใช่การวินิจฉัยโรค
+                    หากมีข้อสงสัยเพิ่มเติม โปรดติดต่อหมายเลขโทรศัพท์แนบท้ายแบบคัดกรองนี้
+                    <br>
+                    ด้วยความปรารถนาดีจาก โรงพยาบาลมหาราชนครเชียงใหม่
+                    คณะแพทยศาสตร์ มหาวิทยาลัยเชียงใหม่
+				</span>
+			</div>
+
+			<form class="contact100-form validate-form">
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">ชื่อ:</span>
+					<input class="input100" type="text" name="name" placeholder="Enter your name">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">นามสกุล:</span>
+					<input class="input100" type="text" name="lastname" placeholder="Enter your lastname">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">เพศ </span>
+					<p>
+                    <input for="rdoSex" name="rdoSex" type="radio" value="Man">ชาย
+                    <input for="rdoSex" name="rdoSex" type="radio" value="Woman">หญิง<br>
+                    </p>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">อายุ:</span>
+					<input class="input100" type="text" name="age" placeholder="Enter your Age">
+					<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+				<span class="ar">โรคประจำตัว (ถ้ามี):</span><br>
+				 <input type="checkbox" id="check1" name="check1" value="1" /*onclick="countCheckBox($('#name').val())"/* />ความดันโลหิต<br>
+                <input type="checkbox" id="check2" name="check2" value="1" />เบาหวาน<br>
+                <input type="checkbox" id="check3" name="check3" value="1" />ไขมันในเลือดสูง<br>
+                <input type="checkbox" id="check4" name="check4" value="1" />โรคหัวใจ<br>
+                <input type="checkbox" id="check5" name="check5" value="1" />โรคไต<br>
+                <input type="checkbox" id="check6" name="check6" value="1" />โรคปอด(หอบหืด,ถุงลมโป่งพอง)<br>
+                <input type="checkbox" id="check7" name="check7" value="1" />อื่นๆ:<input type="text"><br><br>
+				<span class="focus-input100"></span>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="ar">ท่านมีอาการดังต่อไปนี้อย่างน้อยหนึ่งอาการ ► ไอ,เจ็บคอ,คัดจมูก,น้ำมูกไหล,หายใจลำบาก </span>
+					<p>
+                     <input for="checkarkarnyes" name="checkarkarn" type="radio" value="1">ใช่<br>
+                     <input for="checkarkarnno" name="checkarkarn" type="radio" value="0">ไม่ใช่<br><br>
+                    </p>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="ar">ท่านรู้สึกมีไข้ หรือ อุณหภูมิร่างกายเกิน 37.5 องศาเซลเซียส</span>
+					<p>
+                     <input for="checktempyes" name="checktemp" type="radio" value="1">ใช่<br>
+            <input for="checktempno" name="checktemp" type="radio" value="0">ไม่ใช่<br><br>
+                    </p>
+				</div>
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="ar">ภายใน 14 วันที่ผ่านมาท่านมีประวัติดังต่อไปนี้ หรือไม่</span>
+					<p>
+                     <input type="checkbox" id="checkhis1" name="checkhis1" value="1"/>ท่านเดินทางมาจากต่างประเทศ<br>
+            <input type="checkbox" id="checkhis2" name="checkhis2" value="1"/>ท่านเคยสัมผัสใกล้ชิดกับนักท่องเที่ยว ที่มาจากประเทศที่มีการระบาด<br>
+            <input type="checkbox" id="checkhis3" name="checkhis3" value="1"/>ท่านเคยสัมผัสใกล้ชิดกับผู้ป่วยที่ยืนยันการติดเชื้อไวรัส COVID-19<br>
+            <input type="checkbox" id="checkhis4" name="checkhis4" value="1"/>ท่านพักอาศัยอยู่ร่วมกับคนใกล้ชิด ที่เดินทางมาจากประเทศที่มีการระบาด<br>
+            <input type="checkbox" id="checkhis5" nmae="checkhis5" value="1"/>ไม่มี<br><br>
+                    </p>
+				</div>
+				<div class="container-contact100-form-btn">
+					<button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+					</button>
+				</div>
+			</form>
+		</div>
+	</div>
+
+
+
+	<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+	<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-23581568-13');
+	</script>
+
+</body>
+</html>

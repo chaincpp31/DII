@@ -50,19 +50,24 @@ if ($Connect->connect_error) {
             <td>Lastname</td>
             <td>Gender</td>
             <td>Age</td>
-            <td>total</td>
+            <td>Disease</td>
+            <td>Symptom</td>
+            <td>Temp>37.5</td>
+            <td>History</td>
+            <td>Total</td>
             <td>status</td>
+            <td>Date</td>
         </tr>
         <?php
-        function showStatus($total){
+         function showStatus($total){
             if ($total == 1 || $total==2){
-                return "เสี่ยงน้อย";
+                return "ยังไม่มีความเสี่ยง";
             }
-            elseif ($total ==3 || $total==4){
+            elseif ($total >=3 && $total<=8){
                 return "เสี่ยงปานกลาง";
             }
-            elseif ($total ==5 || $total==6){
-            return "เสี่ยงมาก";
+            elseif ($total >=8 && $total<=20){
+            return "เสี่ยงมาก ควรรีบไปพบแพทย์";
             }
         }
     
@@ -71,7 +76,7 @@ if ($Connect->connect_error) {
         while($row = $result->fetch_assoc()) {
             // echo "11";
             // echo "<tr><td>000</td></tr>";
-          echo "<tr><td>".$row['name']."</td><td>".$row['lastname']."</td><td>".$row['sex']."</td><td>".$row['age']."</td><td>".$row['rok']."</td><td>".showStatus($row['rok'])."</td></tr>";
+            echo "<tr><td>".$row['name']."</td><td>".$row['lastname']."</td><td>".$row['sex']."</td><td>".$row['age']."</td><td>".$row['disease']."</td><td>".$row['arkarn']."</td><td>".$row['temp']."</td><td>".$row['his']."</td><td>".$row['total']."</td><td>".showStatus($row['total'])."</td><td>".$row['date']."</td></tr>";
         }
         
       } else {
